@@ -126,6 +126,7 @@ const copyFromWindow = require('copyFromWindow');
 const setInWindow = require('setInWindow');
 const injectScript = require('injectScript');
 const getTimestampMillis = require('getTimestampMillis');
+const encodeUriComponent = require('encodeUriComponent');
 
 const measurementId = data.measurementId;
 const category = data.Category;
@@ -139,7 +140,7 @@ let user_properties = data.user_properties ? makeTableMap(data.user_properties, 
 let gtag = copyFromWindow('gtag');
 if(!gtag){
   gtag = createArgumentsQueue('gtag', 'dataLayer');
-  injectScript('https://www.googletagmanager.com/gtag/js?id='+measurementId, data.gtmOnSuccess, data.gtmOnFailure, 'gtag');
+  injectScript('https://www.googletagmanager.com/gtag/js?id='+encodeUriComponent(measurementId), data.gtmOnSuccess, data.gtmOnFailure, 'gtag');
   
   gtag('js', getTimestampMillis());
 }
