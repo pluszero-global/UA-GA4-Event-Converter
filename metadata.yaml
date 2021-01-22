@@ -1,5 +1,5 @@
 homepage: "https://www.pluszero.co.kr/"
 documentation: "https://www.pluszero.co.kr/blog/how-to-easily-upgrade-to-google-analytics-4-ga4-pluszero/"
 versions:
-  - sha: aaebfae44dbf9e8b0f9c888495a438c07e5a5c88
+  - sha: 98500756561a1c48a8bf6c8ffa28bac448f4639a
     changeNotes: Initial Version
