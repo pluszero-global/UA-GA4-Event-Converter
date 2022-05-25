@@ -1,5 +1,5 @@
 homepage: "https://www.pluszero.co.kr/"
-documentation: "https://www.pluszero.co.kr/blog/how-to-easily-upgrade-to-google-analytics-4-ga4-pluszero/"
+documentation: "https://pluszero.co.kr/google-analytics/how-to-easily-upgrade-to-google-analytics-4-with-gtm-template-pluszero/"
 versions:
   - sha: 98500756561a1c48a8bf6c8ffa28bac448f4639a
     changeNotes: Initial Version
